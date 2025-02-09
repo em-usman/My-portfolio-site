@@ -1,0 +1,189 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  gap: 120px;
+  background: #f3f4f7;
+  width: fit-content;
+  margin: 0;
+}
+
+.mobile-menu {
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(36, 36, 252, 0.8);
+  backdrop-filter: blur(5px);
+  list-style-type: none;
+  padding-top: 60px;
+  top: 0;
+  margin: 0;
+  position: fixed;
+}
+
+.cross {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 55px;
+}
+
+#portfolio,
+#about,
+#contact,
+.links {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  padding: 15px 0 10px 4px;
+  cursor: pointer;
+}
+
+.menu-bar {
+  color: #6070ff;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-self: left;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 15px 0 15px 15px;
+  position: fixed;
+}
+
+.tabs {
+  display: none;
+}
+
+.hamburger {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.bar {
+  height: 3px;
+  width: 22px;
+  background: #6070ff;
+  margin: 3px 10px 3px 3px;
+  border-radius: 5px;
+}
+
+.hamburger.active .bar {
+  background-color: aliceblue;
+}
+
+.intro {
+  border-bottom-left-radius: 65px;
+  background-image: url(background-images/intro-shapes.svg);
+  background-repeat: no-repeat;
+  padding: 114px 15px 80px 15px;
+  width: 330px;
+  width: fit-content;
+  background-size: 100%;
+  background-color: #fff;
+  background-position: 0 67px;
+}
+
+.greeting {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  width: 290px;
+}
+
+.intro-description {
+  color: #344563;
+}
+
+.lets-connect {
+  text-decoration: none;
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.intro-icons {
+  list-style: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  padding: 0%;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-bar {
+    font-size: 18px;
+    font-weight: 700;
+    color: #344563;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    height: 72px;
+  }
+
+  .logo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #6070ff;
+    padding-left: 50px;
+  }
+
+  .tabs {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    padding-right: 100px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .intro {
+    background-image: url(background-images/intro-desktop.svg);
+    border-bottom-left-radius: 130px;
+    height: auto;
+    padding: 300px 0 150px 100px;
+    background-color: #fff;
+  }
+
+  .greeting {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    width: auto;
+  }
+
+  .intro-description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 80%;
+  }
+
+  a {
+    text-decoration: none;
+    color: #344563;
+    font-size: 15px;
+  }
+}
