@@ -357,7 +357,74 @@ body {
     margin: 20px;
   }
 
+  /* contact form style*/
+
+  .contact-section {
+    background-color: #6070ff;
+    background-image: url(background-images/contact-shape.svg);
+    background-position: 90% 0;
+    background-repeat: no-repeat;
+    border-top-left-radius: 80px;
+    align-items: center;
+    min-width: 350px;
+    text-align: center;
+  }
+  
+  .contact-title {
+    color: #fff;
+    padding-top: 100px;
+  }
+  
+  .contact-text {
+    color: #ffff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 45px;
+  }
+  
+  #form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 4%;
+    gap: 21px;
+  }
+  
+  #name {
+    width: 96%;
+    height: 48px;
+    border-radius: 8px;
+    border-style: none;
+    padding-left: 10px;
+    margin-right: 6px;
+  }
+  
+  #email {
+    width: 96%;
+    height: 48px;
+    border-radius: 8px;
+    border-style: none;
+    padding-left: 10px;
+  }
+  
+  #message {
+    width: 96%;
+    height: 170px;
+    border-radius: 8px;
+    border-style: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 0 0 10px;
+  }
+  
+  .contact-button {
+    margin-bottom: 40px;
+    width: 140px;
+  }
+
 @media (min-width: 768px) {
+  /* home style */
+
   .menu {
     display: none;
   }
@@ -468,5 +535,44 @@ body {
     text-align: left;
     vertical-align: middle;
     padding: 10px;
+  }
+
+  /* contact form style */
+
+  .contact-section {
+    background-image: url(background-images/contact-desktop.svg);
+    border-top-left-radius: 130px;
+    width: 100%;
+  }
+
+  .contact-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+  }
+
+  .contact-text {
+    margin: 0 30% 0 30%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #form {
+    align-items: center;
+  }
+
+  #name {
+    border-radius: 0;
+    width: 447px;
+  }
+
+  #email {
+    border-radius: 0;
+    width: 447px;
+  }
+
+  #message {
+    border-radius: 0;
+    width: 447px;
   }
 }
