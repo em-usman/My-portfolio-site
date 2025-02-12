@@ -122,6 +122,241 @@ body {
   padding: 0%;
 }
 
+  /* about us style */
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(221, 221, 253, 0.705);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    display: none;
+  }
+  
+
+  .popup-heading {
+    margin: 0;
+  }
+  
+  .popup-window {
+    z-index: 5;
+    min-width: 295px;
+    height: auto;
+    border-radius: 16px;
+    padding: 16px;
+    background-color: #fff;
+    border: solid #dfe1e6 1px;
+    margin: 20px;
+    color: #172b4d;
+    position: absolute;
+    overflow-y: auto;
+    max-height: 90%;
+  }
+  
+  .popup-img {
+    width: 100%;
+    max-width: 505px;
+    height: auto;
+    gap: 0;
+    border-radius: 8px;
+    align-self: center;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .popup-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .popup-cancel {
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+  }
+
+  .card-content {
+    min-width: 110px;
+  }
+  
+  
+  
+  .works {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    flex-direction: column;
+    gap: 60px;
+    padding: 100px 0;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-width: 295px;
+    align-items: center;
+    height: auto;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 12px;
+    background-color: #fff;
+    border: solid #dfe1e6 1px;
+    margin: 20px;
+  }
+  
+  .cards-img {
+    width: 100%;
+    max-width: 505px;
+    height: auto;
+    gap: 0;
+    border-radius: 8px;
+  }
+  
+  .card-title {
+    color: #172b4d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+  }
+  
+  .frame {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    line-height: 16px;
+    gap: 25px;
+    font-weight: 600;
+    color: #7a869a;
+    padding-left: 0;
+    list-style-type: disc;
+  }
+  
+  .card-frame {
+    color: #344563;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  
+  .canopy {
+    list-style-type: none;
+    color: #172b4d;
+  }
+  
+  .card-text {
+    color: #344563;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  
+  .tags {
+    padding: 0;
+  }
+  
+  .tag-item {
+    display: inline-block;
+    color: #6070ff;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 4px 12px 4px 12px;
+    background-color: #e3e5f7;
+    border-radius: 6px;
+  }
+  
+  .card-button {
+    border: solid #6070ff 1px;
+    border-radius: 8px;
+    height: 48px;
+    padding: 12px;
+    color: #396df2;
+    font-weight: 500;
+    font-size: 17px;
+    transition: background-color 0.5s ease;
+    margin-bottom: 15px;
+  }
+  
+  .card-button:hover {
+    background-color: #6070ff;
+    color: rgb(235, 245, 253);
+    cursor: pointer;
+  }
+  
+  .card-button:active {
+    background-color: #2230d2;
+    color: aliceblue;
+    cursor: pointer;
+  }
+  
+  .about-section {
+    background-color: #fff;
+    border-top-right-radius: 80px;
+    width: fit-content;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #172b4d;
+  }
+  
+  .about-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  
+  .main-list {
+    padding: 0 0 100px 0;
+  }
+  
+  .sub-list {
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: 15px;
+  }
+  
+  .sub-skills {
+    width: 90%;
+    height: 66.71px;
+    border-radius: 8px;
+    background-color: rgba(247, 247, 249, 1);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .skill-img {
+    border-radius: 50px;
+    margin-left: 10px;
+  }
+  
+  .main-skill {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px;
+  }
+
 @media (min-width: 768px) {
   .menu {
     display: none;
@@ -185,5 +420,53 @@ body {
     text-decoration: none;
     color: #344563;
     font-size: 15px;
+  }
+
+  /* about us style */
+
+  .card {
+    flex-direction: row;
+    gap: 30px;
+    border-radius: 30px;
+    min-height: 490px;
+    width: 80%;
+  }
+
+  .card-title {
+    font-size: 40px;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10% 0 10% 0%;
+    border-top-right-radius: 130px;
+  }
+
+  .about-content {
+    padding-left: 80px;
+    width: 65%;
+    min-width: 225px;
+  }
+
+  .sub-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sub-skills {
+    display: inline-block;
+    width: 122px;
+    height: 120px;
+    background-color: #f7f7f9;
+    margin-right: 10px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 10px;
   }
 }
