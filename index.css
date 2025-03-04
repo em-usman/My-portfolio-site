@@ -290,7 +290,7 @@ body {
   }
   
   .card-button:hover {
-    background-color: #6070ff;
+    background-color: #344563;
     color: rgb(235, 245, 253);
     cursor: pointer;
   }
@@ -389,6 +389,7 @@ body {
     flex-direction: column;
     margin: 4%;
     gap: 21px;
+    margin-bottom: 0;
   }
   
   #name {
@@ -564,15 +565,21 @@ body {
   #name {
     border-radius: 0;
     width: 447px;
+    border-radius: 8px;
+    font-size: 1.05rem;
   }
 
   #email {
     border-radius: 0;
     width: 447px;
+    border-radius: 8px;
+    font-size: 1.05rem;
   }
 
   #message {
+    font-size: 1.05rem;
     border-radius: 0;
     width: 447px;
+    border-radius: 8px;
   }
 }
